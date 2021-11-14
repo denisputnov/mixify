@@ -1,7 +1,7 @@
 import React from 'react'
 import { Container, MixifyOpener } from '../components'
 
-const WelcomePage = () => {
+const WelcomePage: React.FC = () => {
   return (
     <Container display="flex">
       <MixifyOpener />

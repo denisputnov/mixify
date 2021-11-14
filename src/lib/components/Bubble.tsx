@@ -26,9 +26,9 @@ const borderRadiusMorph = keyframes`
 `
 
 const transformationAndRotation = keyframes`
-  0%   { transform: none; }
-  50%  { transform: translateY(-10%) rotateY(10deg) scale(1.05) }
-  100% { transform: none; }
+  0%   { transform: none }
+  50%  { transform: translateY(-10%) }
+  100% { transform: none }
 `
 
 const defaultColor = "#292929"
@@ -37,14 +37,14 @@ const defaultHeight = "100vh"
 
 const Shape = styled.div`
   position: absolute;
-  background: radial-gradient(circle at 80% 30%, ${(props: Props) => props.color || defaultColor}, #000);
+  background: radial-gradient(circle at 80% 30%, ${(props: Props) => props.color ?? defaultColor}, #000);
   animation: ${borderRadiusMorph} 40s cubic-bezier(1,1.48,.87,.1) infinite both alternate, 
              ${transformationAndRotation} 25s ease-in-out infinite both;
   border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
   transition: all 1s ease-in-out;
-  width:  ${(props: Props) => props.width  || defaultWidth };
-  height: ${(props: Props) => props.height || defaultHeight};
-  bottom: -20%;
+  width:  ${(props: Props) => props.width  ?? defaultWidth };
+  height: ${(props: Props) => props.height ?? defaultHeight};
+  top: 20%;
   left: -40%;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 20px 80px;
 

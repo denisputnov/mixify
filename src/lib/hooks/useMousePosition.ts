@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Position } from "../types";
 
 
-const useMousePosition = () => {
+const useMousePosition = (): Position => {
   const [position, setPosition] = useState<Position>({ x: 0, y: 0 });
 
   useEffect(() => {

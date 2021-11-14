@@ -1,9 +1,10 @@
 import React from 'react'
+import { WaveButton } from '../components'
 
-const LinkPage = () => {
+const LinkPage: React.FC = () => {
   return (
     <div>
-      LinkPage
+      <WaveButton text={"Create "} animation='moveFromLeft' />
     </div>
   )
 }

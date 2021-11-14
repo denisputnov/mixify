@@ -1,4 +1,6 @@
 export { default as Container } from './Container'
 export { default as MixifyOpener } from './MixifyOpener'
 export { default as Bubble } from './Bubble'
-export { default as IntroText } from './IntroText'
+export { default as Intro } from './Intro'
+export { default as PresentationWindow } from './PresentationWindow'
+export { default as WaveButton } from './WaveButton'

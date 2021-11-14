@@ -3,7 +3,7 @@ import { Switch, Route, BrowserRouter } from 'react-router-dom';
 
 import { WelcomePage, LinkPage } from './lib/pages';
 
-const App = () => {
+const App: React.FC = () => {
   return (
     <BrowserRouter>
       <Suspense fallback={"Loading"}>

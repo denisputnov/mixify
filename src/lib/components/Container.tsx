@@ -14,13 +14,12 @@ const Container: React.FC<Props> = ({ children }) => {
 
 const Wrapper = styled.div`
   position: relative;
-  display: ${(props: Props) => props.display || 'block'};
+  display: ${(props: Props) => props.display ?? 'block'};
   align-items: center;
   justify-content: center;
   width: 100%;
   height: auto;
   min-height: 100vh;
-  /* background-color: #1f1f1f; */
   background: radial-gradient(circle at 70% 40%, #222222, black);
   overflow: hidden;
 `
